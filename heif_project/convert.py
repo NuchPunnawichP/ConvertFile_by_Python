@@ -8,7 +8,7 @@ from pillow_heif import register_heif_opener
 register_heif_opener()
 
 def batch_convert(directory_path):
-    search_path = os.path.join(directory_path, "/Users/komert/Desktop/heif_project/id.heic")
+    search_path = os.path.join(directory_path, "*.heic")
     heic_files = glob.glob(search_path)
     
     if not heic_files:
